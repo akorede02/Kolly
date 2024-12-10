@@ -1,0 +1,144 @@
+.mainDiv{
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(180, 187, 203);
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+}
+.firstDiv{
+    width: 35vw;
+    text-align:left;
+    padding: 50px;
+    margin-right: -40px;
+    background-color: aliceblue;
+    border: none;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.firstDiv label{
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(132, 150, 194);
+}
+#input2, #input3{
+    width: 50px;
+}
+.inputDiv2{
+    border: 1px solid black;
+    padding: 8px;
+    margin: 5px;
+    border-radius: 5px;
+    margin-left: -1px;
+}
+.secondDiv{
+    width: 35vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.9);
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 50px;
+}
+.secondDiv img{
+    width: 150px;
+}
+#firstT{
+    font-size: 30px;
+}
+#secondT{
+    font-size: large;
+}
+.calculateBtn{
+    border-radius: 50px;
+    padding: 10px;
+    margin: 5px;
+    background-color:rgb(230, 235, 213);
+    width: 100%;
+    border: none;
+    font-size: large;
+}
+
+.div1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input1Div{
+    display: flex;
+    flex-direction: column;
+}
+.input2Div{
+    display: flex;
+    gap: 1em;
+}
+.inputDiv1 input{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+#input2{
+    width: 16vw;
+}
+
+
+
+
+@media only screen and (max-width:768px){
+    .mainDiv{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    } 
+    #input2{
+        width: 27vw;
+    }
+    .div1 h3{
+        font-size: 0.8em;
+    }
+    label{
+        font-size: 0.7em;
+    }
+
+    .firstDiv, .secondDiv{
+        width: 60vw;
+        padding: 0 20px;
+        margin: auto;
+        border-radius: 0;
+    }
+    .secondDiv img{
+        width: 100px;
+    }
+    #firstT{
+        font-size: 15px;
+    }
+    #secondT{
+        font-size: 10px;
+    }
+}
+
+
+@media only screen and (max-width:440px){
+    .firstDiv, .secondDiv{
+        width: 80vw;
+        padding: 0 20px;
+        margin: auto;
+        border-radius: 0;
+    }
+    #input2{
+        width: 35vw;
+    }
+}
